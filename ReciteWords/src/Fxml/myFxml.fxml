@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="887.0" prefWidth="825.0" style="-fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 10%, center 0% 20%, radius 85%, reflect,#d5dcf8 0%, #ffffff ,#d5dcf8 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReciteWords1.Controller">
+   <children>
+      <Button fx:id="bt_blur" layoutX="357.0" layoutY="671.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="模糊" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <ProgressBar fx:id="pb" layoutX="21.0" layoutY="49.0" opacity="0.35" prefHeight="30.0" prefWidth="176.0" progress="0.0" style="-fx-backgroundcolor: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);" visible="false">
+         <effect>
+            <Glow level="0.2" />
+         </effect></ProgressBar>
+      <Button fx:id="bt_know" layoutX="190.0" layoutY="671.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="认识" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_nknow" layoutX="524.0" layoutY="671.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="不认识" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb_Word" alignment="CENTER" layoutX="83.0" layoutY="153.0" prefHeight="94.0" prefWidth="681.0">
+         <font>
+            <Font name="System Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_China" alignment="CENTER" layoutX="93.0" layoutY="332.0" prefHeight="112.0" prefWidth="661.0" text="请设置并导入单词本">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_nerver" layoutX="357.0" layoutY="790.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: transparent;" text="不再出现" textAlignment="CENTER" underline="true" visible="false" />
+      <MenuBar prefHeight="51.0" prefWidth="195.0" style="-fx-background-color: rgba(255, 255, 255, 0);">
+        <menus>
+          <Menu mnemonicParsing="false" text="文件">
+            <items>
+              <MenuItem fx:id="bt_load" mnemonicParsing="false" text="导入" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="设置">
+            <items>
+              <MenuItem fx:id="bt_set" mnemonicParsing="false" text="学习设置" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="帮助">
+            <items>
+              <MenuItem mnemonicParsing="false" text="暂无" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="lb_cont" alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="268.0" prefHeight="51.0" prefWidth="279.0" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Microsoft YaHei" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_ySIG" alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="51.0" prefHeight="30.0" prefWidth="52.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_group" contentDisplay="CENTER" layoutX="305.0" layoutY="51.0" prefHeight="30.0" prefWidth="60.0" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

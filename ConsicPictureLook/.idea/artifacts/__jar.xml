@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="照片查看器-黄朝辉.jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/照片查看器-黄朝辉.jar</output-path>
+    <root id="archive" name="ConsicPictureLook.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/rec/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ConsicPictureLook" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="RandomAllocation:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RandomAllocation_jar</output-path>
+    <root id="root">
+      <element id="archive" name="RandomAllocation.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/rec/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="RandomAllocation" />
+      </element>
+    </root>
+  </artifact>
+</component>

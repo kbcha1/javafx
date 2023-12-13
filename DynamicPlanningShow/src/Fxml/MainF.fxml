@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller1.Controller">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="36.0" prefWidth="181.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="文件">
+               <items>
+                  <MenuItem fx:id="mi_Struct" mnemonicParsing="false" onAction="#NewStruct" text="新建问题" />
+                  <MenuItem fx:id="mi_Simple" mnemonicParsing="false" onAction="#simple" text="示例" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="删除" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="关于" />
+         </menus>
+      </MenuBar>
+      <ScrollPane fx:id="sp_Result" layoutX="588.0" prefHeight="643.0" prefWidth="219.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
